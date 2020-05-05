@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #000;
 }
 
 img {
@@ -12,4 +13,26 @@ img {
 
 .movie-poster {
   flex: 1;
+  padding: 10px;
+  position: relative;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  opacity: 0.6;
+}
+
+.movie-poster:hover .overlay {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: block;
+  }
 }
