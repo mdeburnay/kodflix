@@ -1,17 +1,16 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import MovieList from "./components/MovieList";
+import MovieList from "../src/Pages/MovieList";
+import Navbar from "./components/Navbar";
 
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div className="App">
-          <Route exact path="/" component={MovieList} />
-        </div>
-      </Router>
+      <div className="App">
+        <Navbar />
+        <MovieList />
+      </div>
     );
   }
 }

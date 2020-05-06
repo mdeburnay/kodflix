@@ -1,13 +1,13 @@
 import React from "react";
 
-import Movie from "./Movie";
+import Movie from "../Pages/Movie";
 
 import darkKnightLogo from "../images/darkKnightLogo.jpg";
 import fightClubLogo from "../images/fightClubLogo.jpg";
 import inherentViceLogo from "../images/inherentViceLogo.jpg";
 import requiemForADreamLogo from "../images/requiemForADreamLogo.jpg";
 import blacKKKlansmanLogo from "../images/blackKKlansmanLogo.jpg";
-import shawshankRedemptionLogo from "../images/shawshankRedemptionLogo.jpg";
+import onceUponATimeInHollywoodLogo from "../images/onceUponATimeInHollywoodLogo.jpg";
 
 export default function MovieList() {
   return (
@@ -24,8 +24,6 @@ export default function MovieList() {
           title="Inherent Vice"
           logo={inherentViceLogo}
         />
-      </div>
-      <div className="container">
         <Movie
           id="requiemforadream"
           title="Requiem For A Dream"
@@ -37,9 +35,9 @@ export default function MovieList() {
           logo={blacKKKlansmanLogo}
         />
         <Movie
-          id="theshawshankredemption"
-          title="The Shawshank Redemption"
-          logo={shawshankRedemptionLogo}
+          id="onceuponatimeinhollywood"
+          title="Once Upon A Time In Hollywood"
+          logo={onceUponATimeInHollywoodLogo}
         />
       </div>
     </div>
