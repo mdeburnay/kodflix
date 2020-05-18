@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Movie(props) {
   return (
-    <Link to={"/" + props.id} className="movie-poster">
+    <Link to={`/${props.id}`} className="movie-poster">
       <img
         src={props.logo}
         className="movie-image"
@@ -12,6 +12,6 @@ export default function Movie(props) {
       <div className="overlay">
         <div className="text-box">{props.title}</div>
       </div>
-    </Link>
+    </Link> 
   );
 }

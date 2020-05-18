@@ -3,6 +3,11 @@
   background-color: #000;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
 .nav-logo {
   width: 100px;
   transition: 0.2s;
@@ -11,11 +16,6 @@
 .movie-image {
   width: 100%;
   transition: 0.5s ease;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .movie-poster {
@@ -52,10 +52,4 @@
 
 .movie-poster:hover .overlay {
   opacity: 0.8;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    display: block;
-  }
 }
