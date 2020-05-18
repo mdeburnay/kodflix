@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import getMovieList from "./getMovieList";
 
 export default class movieId extends Component {
@@ -11,15 +11,19 @@ export default class movieId extends Component {
   componentDidMount() {
     let movieId = this.props.match.params.movieId;
     let movie = getMovieList().find((movie) => movie.id === movieId);
-    this.setState({ movie });
+    this.setState({ movie: movie });
   }
 
   render() {
-    return (
-      <div>
-        <h1>{this.state.welcomeMessage}</h1>
-        <Link to="/">Home</Link>
-      </div>
-    );
+    if (this.state.movie === undefined) {
+      return <Redirect to="/not-found" />;
+    } else {
+      return (
+        <div>
+          <h1>{this.state.movie.title}</h1>
+          <Link to="/">Home</Link>
+        </div>
+      );
+    }
   }
 }

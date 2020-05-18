@@ -1,21 +1,25 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MovieList from "../src/Pages/MovieList";
 import Navbar from "./components/Navbar";
-import movieId from "./components/movieId";
+import MovieId from "./components/MovieId";
+import NotFound from "../src/Pages/NotFound";
 
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Router>
+      <Router>
+        <div className="App">
           <Navbar />
-          <Route exact path="/" component={MovieList} />
-          <Route exact path="/:movieId" component={movieId} />
-        </Router>
-      </div>
+          <Switch>
+            <Route exact path="/" component={MovieList} />
+            <Route exact path="/not-found" component={NotFound} />
+            <Route exact path="/:MovieId" component={MovieId} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
