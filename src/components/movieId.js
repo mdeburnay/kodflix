@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
 import getMovieList from "./getMovieList";
 
-export default class movieId extends Component {
+export default class MovieId extends Component {
   constructor() {
     super();
     this.state = { movie: {} };
