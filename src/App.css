@@ -3,19 +3,6 @@
   background-color: #000;
 }
 
-<<<<<<< HEAD
-.nav-logo {
-  width: 100px;
-  transition: 0.2s;
-}
-
-.movie-image {
-  width: 100%;
-  transition: 0.5s ease;
-}
-
-=======
->>>>>>> 20fa336e531f44c126ae01b5773e58d0acbba583
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -61,13 +48,6 @@
 
 .movie-poster:hover .movie-image {
   opacity: 0.3;
-<<<<<<< HEAD
-}
-
-.movie-poster:hover .overlay {
-  opacity: 0.8;
-=======
->>>>>>> 20fa336e531f44c126ae01b5773e58d0acbba583
 }
 
 .movie-poster:hover .overlay {

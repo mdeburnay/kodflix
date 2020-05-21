@@ -1,0 +1,37 @@
+.movie-details {
+  height: 550px;
+}
+.movie-title {
+  color: white;
+  text-align: left;
+}
+
+.movie-details .details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.movie-details .movie-details-image {
+  width: 50%;
+}
+
+.movie-details .movie-synopsis {
+  color: white;
+  font-weight: 500;
+  text-align: left;
+}
+
+.home-button {
+  transition: 0.2s ease;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transform: translate(-50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.home-button:hover {
+  color: white;
+}
