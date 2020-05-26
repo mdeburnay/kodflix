@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const movies = require("./backendMovieList");
 
-app.get("/", (req, res) => res.send("Hello World!"));
+app.get("/rest/movieList", (req, res) => res.send(movies.movieList));
 
 app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
