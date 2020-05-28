@@ -15,10 +15,10 @@
     "serve": "^11.3.1"
   },
   "scripts": {
-    "start": "serve -s build",
-    "start-all": "npm-run-all -p start-local start-backend",
+    "start": "react-scripts start",
+    "start-all": "npm-run-all -p start start-backend",
     "start-backend": "nodemon src/backend/app.js",
-    "start-local": "react-scripts start",
+    "proxy": "http://localhost:3001",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

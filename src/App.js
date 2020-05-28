@@ -13,6 +13,10 @@ import NotFound from "../src/Pages/NotFound.js";
 import "./App.css";
 
 export default function App() {
+  fetch("http://localhost:3001/movieList")
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);

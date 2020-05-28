@@ -28,12 +28,14 @@
   font-size: 20px;
   font-weight: 500;
   text-shadow: 1px 2px 1px black;
+
   padding: 50px;
   top: 25%;
 }
 
 .home-button {
   position: absolute;
+  border-bottom: 1px solid red;
   bottom: 40px;
   text-shadow: 0 1px 0 black;
   transition: 0.2s ease;
