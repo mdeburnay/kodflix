@@ -1,6 +1,5 @@
 import React from "react";
 
-import Navbar from "../components/Navbar.js";
 import Movie from "../Pages/Movie";
 
 import darkKnightLogo from "../images/darkKnightLogo.jpg";
@@ -12,9 +11,8 @@ import onceUponATimeInHollywoodLogo from "../images/onceUponATimeInHollywoodLogo
 
 export default function MovieList() {
   return (
-    <div>
-      <Navbar />
-      <div className="container">
+    <>
+      <div className="container" data-aos="fade-in" data-aos-delay="250">
         <Movie
           id="thedarkknight"
           title="The Dark Knight"
@@ -42,6 +40,6 @@ export default function MovieList() {
           logo={onceUponATimeInHollywoodLogo}
         />
       </div>
-    </div>
+    </>
   );
 }

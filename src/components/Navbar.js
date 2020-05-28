@@ -6,7 +6,7 @@ import kodflixLogo from "../images/kodflixLogo.png";
 export default class Navbar extends Component {
   render() {
     return (
-      <div className="navbar">
+      <div className="navbar" data-aos="fade-in">
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/">

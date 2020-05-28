@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "aos": "^3.0.0-beta.6",
     "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -15,6 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-all": "npm-run-all -p <nodemon src/backend/app.js> <react-scripts start>",
     "start-local": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

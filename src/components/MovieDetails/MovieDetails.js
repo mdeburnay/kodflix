@@ -21,15 +21,19 @@ export default class MovieDetails extends Component {
       return <Redirect to="/not-found" />;
     } else {
       return (
-        <div className="movie-details">
-          <div className="movie-container"></div>
-          <h1 className="movie-title">{this.state.movie.title}</h1>
-          <div className="details-container">
-            <div className="movie-synopsis">{this.state.movie.details}</div>
-            <Link className="home-button" to="/">
-              Home
-            </Link>
+        <div className="movie-container">
+          <img
+            className="movie-backdrop-image"
+            src={this.state.movie.backdrop}
+            alt="Backdrop Pic"
+          />
+          <h1 className="movie-title" data-aos="fade-right">{this.state.movie.title}</h1>
+          <div className="synopsis-container">
+            <div className="movie-synopsis" data-aos="fade-right">{this.state.movie.details}</div>
           </div>
+          <Link className="home-button"  to="/">
+            Home
+          </Link>
         </div>
       );
     }
