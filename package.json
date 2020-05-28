@@ -15,13 +15,13 @@
     "serve": "^11.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "start-all": "npm-run-all -p <nodemon src/backend/app.js> <react-scripts start>",
+    "start": "serve -s build",
+    "start-all": "npm-run-all -p start-local start-backend",
+    "start-backend": "nodemon src/backend/app.js",
     "start-local": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start-backend": "nodemon src/backend/app.js"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
