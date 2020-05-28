@@ -22,18 +22,14 @@ export default class MovieDetails extends Component {
     } else {
       return (
         <div className="movie-details">
+          <div className="movie-container"></div>
           <h1 className="movie-title">{this.state.movie.title}</h1>
           <div className="details-container">
             <div className="movie-synopsis">{this.state.movie.details}</div>
-            <img
-              className="movie-details-image"
-              src={this.state.movie.logo}
-              alt={this.state.movie.title}
-            />
+            <Link className="home-button" to="/">
+              Home
+            </Link>
           </div>
-          <Link className="home-button" to="/">
-            Home
-          </Link>
         </div>
       );
     }

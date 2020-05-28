@@ -1,24 +1,18 @@
 .movie-details {
-  height: 550px;
+  background-image: url(../../images/fightClubBackdrop.jpg);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
 }
+
 .movie-title {
   color: white;
-  text-align: left;
-}
-
-.movie-details .details-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.movie-details .movie-details-image {
-  width: 50%;
 }
 
 .movie-details .movie-synopsis {
   color: white;
+  font-size: 20px;
   font-weight: 500;
-  text-align: left;
 }
 
 .home-button {
