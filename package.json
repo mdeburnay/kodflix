@@ -17,8 +17,8 @@
   },
   "scripts": {
     "start": "serve -s build",
-    "start-local": "react scripts start",
-    "start-dev": "npm-run-all -p start start-backend",
+    "start-local": "react-scripts start",
+    "start-dev": "npm-run-all -p start-local start-backend",
     "start-backend": "nodemon src/backend/app.js",
     "start-servers": "npm-run-all -p build start-backend",
     "build": "react-scripts build",

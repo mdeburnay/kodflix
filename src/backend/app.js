@@ -5,7 +5,7 @@ const port = process.env.PORT || 3001;
 const movies = require("./backendMovieList");
 const fetch = require("node-fetch");
 
-app.use(express.static(path.join(__dirname, "../../build")));
+app.use(express.static(path.join(__dirname, "../../build", "index.html")));
 
 fetch("http://localhost:3001/api/movieList")
   .then((response) => response.json())
@@ -20,5 +20,3 @@ app.get("/", function (req, res) {
 app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
 );
-
-
