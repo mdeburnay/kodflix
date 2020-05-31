@@ -16,9 +16,11 @@
     "serve": "^11.3.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "start-all": "npm-run-all -p start start-backend",
+    "start": "serve -s build",
+    "start-local": "react scripts start",
+    "start-dev": "npm-run-all -p start start-backend",
     "start-backend": "nodemon src/backend/app.js",
+    "start-servers": "npm-run-all -p build start-backend",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
