@@ -1,6 +1,6 @@
 import React from "react";
 
-import Movie from "../Pages/Movie";
+import Movie from "./Movie";
 
 import darkKnightLogo from "../images/darkKnightLogo.jpg";
 import fightClubLogo from "../images/fightClubLogo.jpg";

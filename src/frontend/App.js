@@ -6,9 +6,9 @@ import "aos/dist/aos.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import MovieList from "../src/Pages/MovieList.js";
-import MovieDetails from "./components/MovieDetails/MovieDetails.js";
-import NotFound from "../src/Pages/NotFound.js";
+import MovieList from "./Pages/MovieList";
+import MovieDetails from "./components/MovieDetails/MovieDetails";
+import NotFound from "./Pages/NotFound";
 
 import "./App.css";
 
