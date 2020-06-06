@@ -20,7 +20,7 @@
     "serve": "^11.3.1"
   },
   "scripts": {
-    "start": "node src/src_backend/app.js",
+    "start": "npm-run-all -s build start-backend-remote",
     "start-local": "react-scripts start",
     "start-dev": "npm-run-all -p start-local start-backend",
     "start-backend": "nodemon src/backend/app.js",
