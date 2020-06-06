@@ -12,6 +12,10 @@ import NotFound from "./Pages/NotFound";
 
 import "./App.css";
 
+fetch("http://localhost:3001/rest/backendMovieList")
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+
 export default function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
