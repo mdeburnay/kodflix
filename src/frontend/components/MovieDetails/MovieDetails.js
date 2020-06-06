@@ -27,11 +27,15 @@ export default class MovieDetails extends Component {
             src={this.state.movie.backdrop}
             alt="Backdrop Pic"
           />
-          <h1 className="movie-title" data-aos="fade-right">{this.state.movie.title}</h1>
+          <h1 className="movie-title" data-aos="fade-right">
+            {this.state.movie.title}
+          </h1>
           <div className="synopsis-container">
-            <div className="movie-synopsis" data-aos="fade-right">{this.state.movie.details}</div>
+            <div className="movie-synopsis" data-aos="fade-right">
+              {this.state.movie.details}
+            </div>
           </div>
-          <Link className="home-button"  to="/">
+          <Link className="home-button" to="/">
             Home
           </Link>
         </div>
