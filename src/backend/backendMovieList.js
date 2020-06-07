@@ -1,7 +1,8 @@
-const movieList = [
+module.exports = [
   {
     id: "thedarkknight",
     title: "The Dark Knight",
+    logo: "../src/frontend/images/darkKnightLogo.jpg",
     synopsis:
       "With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.",
   },
@@ -41,5 +42,3 @@ const movieList = [
       "Actor Rick Dalton gained fame and fortune by starring in a 1950s television Western, but is now struggling to find meaningful work in a Hollywood that he doesn't recognize anymore. He spends most of his time drinking and palling around with Cliff Booth, his easygoing best friend and longtime stunt double. Rick also happens to live next door to Roman Polanski and Sharon Tate -- the filmmaker and budding actress whose futures will forever be altered by members of the Manson Family.",
   },
 ];
-
-module.exports.movieList = movieList;

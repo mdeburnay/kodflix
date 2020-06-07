@@ -7,7 +7,7 @@ export default function Movie(props) {
       <img
         src={props.logo}
         className="movie-image"
-        alt={`${props.title} logo}`}
+        alt={`${props.title} logo`}
       />
       <div className="overlay">
         <div className="text-box">{props.title}</div>

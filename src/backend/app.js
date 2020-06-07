@@ -4,7 +4,7 @@ const path = require("path");
 const port = process.env.PORT || 3001;
 const movies = require("./backendMovieList");
 
-app.get("/movieList", (req, res) => res.send(movies.movieList));
+app.get("/movieList", (req, res) => res.send(movies));
 
 app.use(express.static(path.join(__dirname, "../../build")));
 
