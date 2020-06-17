@@ -1,20 +1,21 @@
-import React from "react";
+// function multiply(num1) {
+//   return function (num2) {
+//     return num1 * num2;
+//   };
+// }
 
-class F1Drivers extends React.Component {
-  render() {
-    return (
-      <div>
-        {this.props.list.map((driver) => (
-          <div className="driver" key={driver.name}>
-            <div className="name">{driver.name}</div>
-            <div className="positions">
-              {Object.keys(driver.positions)
-                .map((year) => `${year}: ${driver.positions[year]}`)
-                .join(", ")}
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  }
+function expression(num, operation) {
+  return !operation ? num : operation(num);
 }
+
+function ten(operation) {
+  return expression(10, operation);
+}
+
+function multiply(Fn1) {
+  return function (Fn2) {
+    return Fn1 * Fn2;
+  };
+}
+
+console.log(ten(multiply(ten())));

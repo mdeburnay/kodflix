@@ -26,22 +26,23 @@ export default class MovieDetails extends Component {
   }
 
   render() {
-    if (!this.state.movieVar) {
-      return <Redirect to="/not-found" />;
+    console.log(this.state.movieVar);
+    if (Object.keys(this.state.movieVar).length < 1) {
+      return null;
     } else {
       return (
         <div className="movie-container">
           <img
             className="movie-backdrop-image"
-            src={require(`../../images/${this.state.movieVar.id}.jpg`)}
+            src={require(`../../images/${this.state.movieVar.backdropId}.jpg`)}
             alt="Backdrop Pic"
           />
           <h1 className="movie-title" data-aos="fade-right">
-            {this.state.movie.title}
+            {this.state.movieVar.title}
           </h1>
           <div className="synopsis-container">
             <div className="movie-synopsis" data-aos="fade-right">
-              {this.state.movie.details}
+              {this.state.movieVar.synopsis}
             </div>
           </div>
           <Link className="home-button" to="/">
